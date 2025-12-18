@@ -1,18 +1,183 @@
-.hero-buttons {
-  margin-top: 1.5rem;
+/* ===============================
+   GLOBAL RESET & BASE
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, Arial, sans-serif;
+  background-color: #f7f8fa;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* ===============================
+   NAVBAR
+================================ */
+.navbar {
   display: flex;
-  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 8%;
+  background-color: #111827;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.navbar nav a {
+  margin-left: 1.2rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: #c7d2fe;
+  transition: color 0.2s ease;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+  color: #ffffff;
+}
+
+/* ===============================
+   HERO SECTION
+================================ */
+.hero {
+  text-align: center;
+  padding: 5rem 1rem;
+  background: linear-gradient(135deg, #111827, #1f2937);
+  color: #ffffff;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.hero p {
+  font-size: 1rem;
+  color: #c7d2fe;
+}
+
+/* ===============================
+   HERO BUTTONS
+================================ */
+.hero-buttons {
+  margin-top: 1.8rem;
+  display: flex;
   justify-content: center;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
-.btn-outline {
-  background: transparent;
+/* Base button */
+.btn {
+  padding: 0.7rem 1.6rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
   border: 2px solid #2563eb;
+  background-color: #2563eb;
+  color: #ffffff;
+  transition: all 0.25s ease;
+}
+
+/* Primary hover */
+.btn:hover {
+  background-color: #1e40af;
+  border-color: #1e40af;
+}
+
+/* Outline button */
+.btn-outline {
+  background-color: transparent;
   color: #2563eb;
 }
 
 .btn-outline:hover {
-  background: #2563eb;
-  color: #fff;
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+/* ===============================
+   SECTIONS
+================================ */
+.section {
+  padding: 4rem 8%;
+}
+
+.section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #2563eb;
+  padding-left: 0.6rem;
+}
+
+/* ===============================
+   GRID & CARDS
+================================ */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  font-weight: 500;
+}
+
+/* ===============================
+   PROJECT CARDS (OTHER PAGES)
+================================ */
+.project {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #2563eb;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  margin-bottom: 1.5rem;
+}
+
+.project h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .section {
+    padding: 3rem 6%;
+  }
 }
