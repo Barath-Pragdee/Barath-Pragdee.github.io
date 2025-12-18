@@ -1,6 +1,3 @@
-/* ===============================
-   GLOBAL RESET & BASE
-================================ */
 * {
   margin: 0;
   padding: 0;
@@ -90,7 +87,6 @@ body {
   transition: all 0.25s ease;
 }
 
-/* Primary hover */
 .btn:hover {
   background-color: #1e40af;
   border-color: #1e40af;
@@ -139,7 +135,7 @@ body {
 }
 
 /* ===============================
-   PROJECT CARDS (OTHER PAGES)
+   PROJECT CARDS
 ================================ */
 .project {
   background-color: #ffffff;
