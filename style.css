@@ -1,16 +1,18 @@
-*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Arial,sans-serif}
-body{background:#f7f8fa;color:#1f2937}
-.navbar{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 8%;background:#111827;color:#fff}
-.navbar a{color:#c7d2fe;text-decoration:none;margin-left:1rem;font-size:.95rem}
-.navbar a.active,.navbar a:hover{color:#fff}
-.logo{font-weight:700;font-size:1.2rem}
-.hero{text-align:center;padding:5rem 1rem;background:linear-gradient(135deg,#111827,#1f2937);color:#fff}
-.hero h1{font-size:2.5rem;margin-bottom:.5rem}
-.hero p{color:#c7d2fe}
-.btn{display:inline-block;margin-top:1.5rem;padding:.7rem 1.5rem;background:#2563eb;color:#fff;border-radius:6px;text-decoration:none}
-.section{padding:4rem 8%}
-.section h2{margin-bottom:1.5rem;border-left:4px solid #2563eb;padding-left:.6rem}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem}
-.card,.project{background:#fff;padding:1.5rem;border-radius:10px;box-shadow:0 10px 25px rgba(0,0,0,.05)}
-.project{border-left:4px solid #2563eb}
-.footer{text-align:center;padding:2rem;font-size:.85rem;color:#6b7280}
+.hero-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+}
+
+.btn-outline:hover {
+  background: #2563eb;
+  color: #fff;
+}
